@@ -177,7 +177,6 @@ color: #394261;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .fixed {
@@ -188,6 +187,7 @@ color: #394261;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 1em;
+}
 
 
 
@@ -199,15 +199,15 @@ color: #394261;
 	/*background: -webkit-linear-gradient(bottom, deeppink, hotpink);
 	background: linear-gradient(to bottom, deeppink, hotpink);*/
 
-}
 
 .fixed:hover {
   background: #F3E5E5;
   flex: 3 0;
+}
 
   /*-ms-flex: 2 0;
   -webkit-flex: 2 0;*/
-}
+
 
 
 // start of image display for portfolio
