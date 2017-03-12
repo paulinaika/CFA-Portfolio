@@ -1,0 +1,687 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+
+
+
+ *= require_self
+ */
+
+
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+
+  @media (min-width: 768px) {
+    .container {
+      width: 730px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 930px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1070px;
+    }
+  }
+
+body {
+  background: #FCFDFD;
+}
+
+h1 {
+  text-align: right;
+  font-family: 'Marck Script', cursive;
+  font-size: 60px;
+  margin-bottom: -10px;
+  color: #394261;
+}
+
+
+h2 {
+font-family: 'Open Sans', sans-serif;
+color: #394261;
+}
+
+.upcased {
+  text-transform: uppercase;
+}
+
+
+h2, h3, h4, p, li {
+font-family: 'Open Sans', sans-serif;
+color: #394261;
+}
+
+
+
+
+.container-fluid{
+  padding-left: 100px;
+  padding-right: 100px;
+ }
+
+
+
+
+
+// Avatar
+
+.avatar {
+  display: block;
+  margin: auto;
+  width: 290;
+  height: 240px;
+}
+
+
+// top navbar
+.navbar {
+  margin: 0 20px 20px 20px;
+}
+
+
+
+
+// Side Navigation Bar
+
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    font-family: calibri;
+    background-color: #394261;
+    z-index: 1;
+}
+
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#home {
+    top: 14vh;
+    // background-color: #4CAF50;
+}
+
+#about {
+    top: 27vh;
+    // background-color: #2196F3;
+}
+
+#portfolio {
+    top: 40vh;
+    // background-color: #f44336;
+}
+
+#skills {
+    top: 53vh;
+    // background-color: #555
+}
+
+#contact {
+    top: 66vh;
+    // background-color: #525
+}
+
+
+//
+// .first-section {
+// padding: 0;
+// margin: 0;
+//
+// }
+
+
+
+// Start of Splitbox
+
+.grid {
+    display: flex;
+		height: 65vh;
+		/*display: -moz-flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;*/
+}
+
+.col {
+    padding: 30px;
+    overflow: scroll;
+}
+
+.fluid {
+	background: #9AE5E0;
+	flex: 1 1;
+  z-index: -1;
+	/*-ms-flex: 1 1;
+  -webkit-flex: 1 1;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fixed {
+	background: #fff;
+  flex: 1 0;
+  transition: all 3s ease;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+
+
+
+
+  // padding: 0 50px 0 50px;
+	/*-ms-flex: 1 0;
+  -webkit-flex: 1 0;
+  -webkit-transition: all 1s linear 0s;*/
+	/*background: -webkit-linear-gradient(bottom, deeppink, hotpink);
+	background: linear-gradient(to bottom, deeppink, hotpink);*/
+
+}
+
+.fixed:hover {
+  background: #F3E5E5;
+  flex: 3 0;
+
+  /*-ms-flex: 2 0;
+  -webkit-flex: 2 0;*/
+}
+
+
+// start of image display for portfolio
+
+
+*{margin:0;padding:0;box-sizing: border-box;}
+
+figure{
+  transition: all 200ms;
+  display: inline-block;
+  margin: 12px;
+  width: 320px;
+  height: 230px ;
+  overflow: hidden;
+  position: relative;
+  border: 6px solid #394261;
+  // border:6px solid rgb(142,182,175);
+
+  &:hover{
+    border-width:6px;
+
+.title{
+  transform:translate(0,100px);
+   }
+
+img{
+  transform: scale(1.3)
+    }
+
+
+
+.pop-up-description{
+    opacity:1;
+    transform:translateY(-60px);
+  }
+
+.iconos{
+    transform:translateY(-80px);
+    opacity:1;
+    }
+
+  }
+
+
+  & .title{
+    position: absolute;
+    bottom:-10px;
+    padding:10px;
+    width:100%;
+    text-align:center;
+    color: #fff;
+    font-size: 16px;
+    transition: all 400ms;
+    background: #394261;
+    // background:rgb(142,182,175)
+    // background: white;
+    // background: rgba(178,228,219,0.9);
+    // background:rgba(167,214,234,0.9);
+
+  }
+  & img{
+    width:100%;
+    height: 250px;
+    position: absolute;
+    transition: all 500ms;
+
+  }
+
+
+  }
+.pop-up-description{
+  width:80%;
+  opacity:0;
+  height: 100px;
+  position: absolute;
+  top:50%;
+  left:10%;
+  font-size:18px;
+  //left:-100%;
+  // background: rgba(178,228,219,0.9); //01a89e
+  //background:rgba(64,64,64,0.5);
+  // background colour of pop up desc
+  background: #fff;
+  transition: all 300ms;
+  text-align: center;
+  padding: 10px;
+}
+
+.iconos{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  opacity:0;
+  transition: all 500ms;
+  //transition-delay:500ms;
+  position: absolute;
+  bottom:-40px;
+  //bottom:0;
+  height:10px;
+  width:100%;
+  text-align: center;
+
+  & li{
+    display:inline;
+    margin:5px;
+    position:relative
+  }
+
+  & i{
+    font-size:30px;
+    color:#fff;
+    // color of icons
+    &:after{
+      box-shadow: 0 0 0 4px black;
+
+      //box-shadow: 0 0 0 4px rgba(1,158,168,1); //01a89e;
+      top:-20px;
+      left:-4px;
+      position:absolute;
+      content:"";
+      width:120%;
+      height: 230%;
+      border-radius:50%;
+      opacity:0;
+      transition:all 500ms;
+      transform:scale(1.2);
+    }
+    &:before{
+      width:100px;
+      height:100px;
+      border-radius:100px;
+      // background: rgba(178,228,219,0.9); //01a89e
+      // background color of the icons
+      background: #394261;
+      cursor: pointer;
+      padding:8px;
+    }
+
+    &:hover{
+      //color:rgb(20,60,68);
+      // color: rgba(178,228,219,0.9); //01a89e
+      color: #fff;
+      cursor: pointer;
+
+      &:after{
+        opacity:1;
+        transform:scale(1);
+      }
+    }
+  }
+}
+
+
+// Start for icons for skills page
+.sectionhead{
+	// font-family: 'Abril Fatface', cursive !important;
+	color: #394261;
+	font-size: 40px;
+	text-align: center;
+}
+
+.sectionsubhead{
+	// font-family: 'Patua One', cursive;
+	color: #394261;
+	font-size: 25px;
+	text-align: center;
+	border-bottom: solid 2px;
+	width:80%;
+	margin:0 auto;
+}
+
+#skills-icon{
+	background-color: #9AE5E0;
+	padding: 50px;
+  margin-bottom: 100px;
+}
+
+
+#skills-icon ul{
+	text-align: center;
+}
+
+#skills-icon ul li{
+	font-size: 80px;
+	padding: 20px;
+	display: inline-block;
+	line-height: 0;
+}
+
+
+
+// start of contact me page
+
+// .typewriter  {
+//   overflow: hidden; /* Ensures the content is not revealed until the animation */
+//   border-right: .15em solid orange; /* The typwriter cursor */
+//   white-space: nowrap; /* Keeps the content on a single line */
+//   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//   letter-spacing: .15em; /* Adjust as needed */
+//   animation:
+//     typing 3.5s steps(40, end),
+//     blink-caret .75s step-end;
+// }
+//
+// /* The typing effect */
+// @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
+//
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+//   from, to { border-color: transparent }
+//   50% { border-color: orange; }
+// }
+
+
+
+
+@keyframes typing {
+  from { width: 0em; }
+  to   { width: 49%; }
+}
+
+@keyframes blink-start {
+  from, to { border-color: #39F; }
+  50% { border-color: transparent; }
+}
+
+@keyframes blink-end {
+  from, to { border-color: #39F; }
+  50% { border-color: transparent; }
+}
+
+//
+//
+//
+// // start of contact page
+// a {
+//   text-decoration: none;
+// }
+//
+// .contact-icons {
+//   padding: 80px;
+//   justify-content: center;
+//   align-items: center;
+// }
+//
+// ul {
+//   justify-content: center;
+//   align-items: center;
+// }
+//
+// span {
+//   font-family: 'Typicons', sans-serif;
+//   font-size: 66px;
+//   position: relative;
+//   top: 50px;
+//   left: 42px;
+//   color: #f2f2f2;
+// }
+//
+// .home, .about, .pt, .contact {
+//   width: 150px;
+//   height: 150px;
+//   position: relative;
+//   bottom: 71px;
+//   line-height: 250px;
+//   text-align: center;
+//   font-family: 'Raleway', serif;
+//   font-size: 20px;
+//   text-transform: uppercase;
+// }
+//
+// .home {
+//   color: #3D8EB9
+// }
+// .home:hover {
+//   color: #003343;
+// }
+//
+// .about {
+//   color: #71BA51
+// }
+// .about:hover {
+//   color: #003343;
+// }
+//
+// .pt {
+//   color: #FEC606
+// }
+// .pt:hover {
+//   color: #003343;
+// }
+//
+// .contact {
+//   color: #E75926
+// }
+//
+// .contact:hover {
+//   color: #003343;
+// }
+//
+// li {
+//   list-style: none;
+//   display: inline-block;
+//   margin: 20px 20px;
+//   cursor: pointer;
+//   transition: transform 100ms ease;
+//   transform: scale(1);
+// }
+//
+// li:hover {
+//   transform: scale(1.2);
+// }
+//
+// li:nth-child(1),
+// li:nth-child(2),
+// li:nth-child(3),
+// li:nth-child(4) {
+//   width: 150px;
+//   height: 150px;
+//   border-radius: 4px;
+// }
+//
+// li:nth-child(1) {
+//   background-color: #3D8EB9;
+// }
+//
+// li:nth-child(2) {
+//   background-color: #71BA51;
+// }
+//
+// li:nth-child(3) {
+//   background-color: #FEC606;
+// }
+//
+// li:nth-child(4) {
+//   background-color: #E75926;
+// }
+//
+
+
+
+
+
+
+// main page typewritter
+
+
+.homepage {
+	background: #9AE5E0;
+	flex: 1 1;
+  z-index: -1;
+	/*-ms-flex: 1 1;
+  -webkit-flex: 1 1;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  // overflow: scroll;
+
+}
+
+
+.content{
+  display: grid;
+  margin: 50px;
+  padding: 50px;
+  overflow: scroll;
+}
+
+.larger-font-50{
+  font-size: 50px;
+}
+
+.second-line-slogan {
+  display: flex;
+    // opacity:0.7;
+    white-space:nowrap;
+    overflow:hidden;
+    // border-right: 3px solid black;
+    -webkit-animation: typing 1.5s steps(50, end);
+                        // blink-caret 2s step-end infinite;
+    -webkit-animation-delay:-0.1s;
+    height: 50px;
+    color: #394261;
+    // width: 200%;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0; }
+    to { width:00px; }
+}
+
+
+
+
+// start of contact me page
+#wrapper {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	text-align:center;
+  margin-top: 100px;
+
+}
+
+.bt_wrap{
+	display:inline-block;
+	width:auto;
+	height:auto;
+  // outer border colour
+	background:#9AE5E0;
+	width:100px;
+	height:100px;
+	cursor:pointer;
+
+	perspective: 200px;
+	transition:background 0.2s ease-out;
+}
+
+.box{
+	position:absolute;
+
+	perspective-origin: 50px 50px;
+	transform-origin: 50px 50px;
+	transition:transform 0.2s ease-out;
+	transform-style: preserve-3d;
+}
+
+.icon,.icon2{
+	position:absolute;
+	top:0;
+	left:20px;
+	margin-top:20px;
+  // middle border colour
+	background:#9AE5E0;
+  // colour of the icons
+	color:#394261;
+	width:60px;
+	height:60px;
+	font-size:3em;
+	line-height:60px;
+
+	transition:background 0.2s ease-out;
+	transform: translate3d(0px,0px,30px) rotateY(0deg);
+}
+
+.icon2{
+  // transition colour
+	background:#fff;
+
+	transform: translate3d(29px,0px,0px) rotateY(90deg);
+	transition:background 0.2s ease-out;
+}
+
+.bt_wrap:hover{
+  // outer border when flipped
+	background:#9AE5E0;
+}
+
+.bt_wrap:hover .icon{
+  // left transition colour
+	background:#fff;
+}
+
+.bt_wrap:hover .icon2{
+  // second inner border when flipped
+	background:#fff;
+}
+
+.bt_wrap:hover .box{
+	transform: rotateY(-90deg);
+}
