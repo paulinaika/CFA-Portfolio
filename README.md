@@ -11,3 +11,4 @@ My very first portfolio made using rails.
 2. A simple mockoup layout done through Balsamiq Mockups.
 
 3. Logo design
+![img_9639](https://cloud.githubusercontent.com/assets/25732510/23833328/f70e3592-0797-11e7-9bde-3081a767fa18.JPEG)
